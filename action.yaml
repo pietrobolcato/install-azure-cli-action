@@ -1,6 +1,9 @@
 name: Install azure-cli
-description: |-
-  Installs the latest version of azure-cli. Helpful when running on a self-hosted, or to try the pipeline locally using act.
+description: Installs the latest version of azure-cli. Helpful when running on a self-hosted, or to try the pipeline locally using act.
+author: pietrobolcato
+branding:
+  icon: box
+  color: blue
 runs:
   using: composite
   steps:
