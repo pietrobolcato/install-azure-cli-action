@@ -6,6 +6,6 @@ runs:
   using: composite
   steps:
     - run: |
-        chmod +x install_cli.sh
-        install_cli.sh
+        chmod +x ${{ github.action_path }}/install_cli.sh
+        ${{ github.action_path }}/install_cli.sh
       shell: bash
