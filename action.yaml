@@ -5,7 +5,10 @@ description: |-
 runs:
   using: composite
   steps:
-    - run: |
-        chmod +x ${{ github.action_path }}/install_cli.sh
-        ${{ github.action_path }}/install_cli.sh
+    - name: install azure-cli
+      env:
+        installer_script_path: ${{ github.action_path }}/install_cli.sh
+      run: |
+        chmod +x $installer_script_path
+        bash $installer_script_path
       shell: bash
