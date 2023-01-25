@@ -1,0 +1,12 @@
+name: test-azure-cli-installation
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install azure cli
+        uses: pietrobolcato/install-azure-cli-action@main
