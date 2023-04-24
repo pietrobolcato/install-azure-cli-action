@@ -20,7 +20,7 @@ jobs:
     runs-on: self-hosted-ubuntu
   steps:
     # install azure-cli
-    - uses: pietrobolcato/install-azure-cli-action@latest
+    - uses: pietrobolcato/install-azure-cli-action@main
     # now run any step that would require the `az` command line utility, eg:
     - uses: azure/webapps-deploy@v2
 ```
